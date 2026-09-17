@@ -145,3 +145,7 @@ egui_kittest = { git = "https://github.com/emilk/egui", branch = "main" }
 emath = { git = "https://github.com/emilk/egui", branch = "main" }
 epaint = { git = "https://github.com/emilk/egui", branch = "main" }
 
+# https://github.com/lampsitter/egui_commonmark/pull/107
+egui_commonmark = { git = "https://github.com/emilk/egui_commonmark", branch = "emilk/egui-main" }
+egui_commonmark_backend = { git = "https://github.com/emilk/egui_commonmark", branch = "emilk/egui-main" }
+

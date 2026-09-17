@@ -145,6 +145,3 @@ egui_kittest = { git = "https://github.com/emilk/egui", branch = "main" }
 emath = { git = "https://github.com/emilk/egui", branch = "main" }
 epaint = { git = "https://github.com/emilk/egui", branch = "main" }
 
-# egui_commonmark has no egui 0.36 release yet (only used by fancy-example).
-# Remove this patch once 0.24.0 is published.
-egui_commonmark = { git = "https://github.com/lucasmerlin/egui_commonmark", branch = "update-egui-0.36.0" }

@@ -54,11 +54,11 @@ enum Event {
 impl NativeTextField {
     pub fn new(
         ctx: &Context,
-        id: impl Into<Id>,
+        id: Id,
         text_field_type: TextFieldType,
         window: &impl HasWindowHandle,
     ) -> NativeTextField {
-        let view = EguiWebView::new(ctx, id.into(), window, |b| {
+        let view = EguiWebView::new(ctx, id, window, |b| {
             b.with_html(
                 include_str!("native_text_field.html")
                     .replace("_tag", text_field_type.tag())

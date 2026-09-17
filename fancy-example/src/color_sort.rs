@@ -76,7 +76,7 @@ impl ColorSort {
             Vec2::new(ui.available_width(), 32.0)
         };
 
-        let response = dnd(ui, "fancy_dnd").show_custom(|ui, iter| {
+        let response = dnd(ui, ui.make_persistent_id("fancy_dnd")).show_custom(|ui, iter| {
             items.iter_mut().enumerate().for_each(|(index, item)| {
                 iter.next(ui, Id::new(item.index), index, true, |ui, item_handle| {
                     item_handle.ui_sized(ui, item_size, |ui, handle, state| {

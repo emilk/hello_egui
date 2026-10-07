@@ -24,7 +24,7 @@ egui_router.workspace = true
 egui_flex.workspace = true
 hello_egui_utils.workspace = true
 
-egui = { workspace = true, features = ["color-hex"] }
+egui = { workspace = true, features = ["color-hex", "monochrome_emoji_fonts"] }
 eframe = { workspace = true, default-features = true }
 egui_extras = { workspace = true, features = ["http", "image", "all_loaders"] }
 ehttp.workspace = true
